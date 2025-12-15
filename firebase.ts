@@ -22,13 +22,13 @@ const getSafeEnv = (key: string, defaultValue: string = '') => {
 }
 
 const firebaseConfig = {
-  apiKey: getSafeEnv('VITE_FIREBASE_API_KEY', "AIzaSyCb7J07-xM_pDAihIzfGM2Lzt14UihstaE"),
-  authDomain: getSafeEnv('VITE_FIREBASE_AUTH_DOMAIN', "mr-daebak.firebaseapp.com"),
-  projectId: getSafeEnv('VITE_FIREBASE_PROJECT_ID', "mr-daebak"),
-  storageBucket: getSafeEnv('VITE_FIREBASE_STORAGE_BUCKET', "mr-daebak.firebasestorage.app"),
-  messagingSenderId: getSafeEnv('VITE_FIREBASE_MESSAGING_SENDER_ID', "783896472640"),
-  appId: getSafeEnv('VITE_FIREBASE_APP_ID', "1:783896472640:web:bdc6b837c88ab815c403a5"),
-  measurementId: getSafeEnv('VITE_FIREBASE_MEASUREMENT_ID', "G-LMZP3TJ4XE")
+  apiKey: getSafeEnv('VITE_FIREBASE_API_KEY', "-"),
+  authDomain: getSafeEnv('VITE_FIREBASE_AUTH_DOMAIN', "com"),
+  projectId: getSafeEnv('VITE_FIREBASE_PROJECT_ID', ""),
+  storageBucket: getSafeEnv('VITE_FIREBASE_STORAGE_BUCKET', "mr-..app"),
+  messagingSenderId: getSafeEnv('VITE_FIREBASE_MESSAGING_SENDER_ID', ""),
+  appId: getSafeEnv('VITE_FIREBASE_APP_ID', "1::web:"),
+  measurementId: getSafeEnv('VITE_FIREBASE_MEASUREMENT_ID', "G-")
 };
 
 const app = initializeApp(firebaseConfig);
